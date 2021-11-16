@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <div class="gradient-custom container-fluid">
+
+    <!--Split screen in 2 halfs-->
+    <div class="row" style="height:100vh;">
+      <!--Left Nav Bar-->
+      <div class="leftNav col-xl-2 bg-dark ">
+        <!--LOGO TOP LEFT-->
+        <div class="row" style="height: 6vh;">
+          <div class="col-xl-2" style="height: 6vh;">
+          </div>
+          <div class="col-xl-6" style="height: 6vh;">
+            <img src="logo.png" style="height:100%; width: auto; margin-top:10px;">
+          </div>
+          <div class="col-xl-3" style="height: 6vh;">
+          </div>
+
+        </div>
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-dark">
+          <div class="position-sticky bg-dark">
+            <div class="list-group list-group-flush mx-3 mt-4">
+
+
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple bg-dark" aria-current="true">
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span style="color: white;"> <svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-view-stacked" viewBox="0 0 16 16" style="margin-right: 10px;">
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3zm0 8h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3z" />
+                  </svg>Home</span>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple bg-dark">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: white;"> <svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16" style="margin-right: 10px;">
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                  </svg>Profile</span>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple bg-dark">
+                <i class="fas fa-lock fa-fw me-3"></i><span style="color: white;"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear"
+                    viewBox="0 0 16 16" style="margin-right: 10px;">
+                    <path
+                      d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                    <path
+                      d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                  </svg>Settings</span>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple bg-dark">
+                <i class="fas fa-chart-line fa-fw me-3"></i><span style="color: white;"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up"
+                    viewBox="0 0 16 16" style="margin-right: 10px;">
+                    <path fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
+                  </svg>Analytics</span>
+              </a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-xl-10">
+        <!--Top Nav Bar-->
+        <div class="row align-items-center bg-dark" style="height: 6%;">
+          <div class="col-xl-5">
+            <div class="wrapper">
+              <div class="searchBar">
+                <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                  <!-- <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-mic" viewBox="-10 0 30 17"
+                    style="height:100%; width:100%; color:white;">
+                    <path
+                      d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                    <path
+                      d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2"></div>
+          <div class="col-xl-5 bg-dark d-flex align-items-center" style="border:1px red solid; height:100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell-fill"
+              viewBox="0 0 16 16" style="border:1px red solid;">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+            </svg>
+
+          </div>
+        </div>
+        <!--Bottom Main Body-->
+        <div style="height: 94%;">
+          <div class="row" style="height: 40%;">
+            <div class="col-xl-4" style="padding:1%;">
+              <div class="card bg-dark" style="border-radius: 20px; width: 100%; height: 100%; margin-top: 0px;">
+                <div id="weatherContent" style="color:white;"></div>
+              </div>
+            </div>
+            <div class="col-xl-4" style="padding:1%;">
+              <div class="card bg-dark" style="border-radius: 20px; width: 100%; height: 100%; margin-top: 0px;">
+              </div>
+            </div>
+            <div class="col-xl-4" style="padding:1%;">
+              <div class="card bg-dark" style="border-radius: 20px; width: 100%; height: 100%; margin-top: 0px;">
+              </div>
+            </div>
+          </div>
+          <div class="row" style="height: 50%;">
+            <div class="col-xl-7" style="padding:0% 1% 1% 1%;">
+              <div class="card bg-dark" style="border-radius: 20px; width: 100%; height: 50vh; margin-top: 0px; overflow: auto; padding-top: .5%;">
+                <div id="newsContent" style="color: white;">
+                  <!--START OF CARD-->
+                  <!-- <div class="row bg-secondary" style="height: 10vh; margin: .5% 1% 1% 1%; border-radius: 10px;">
+                    <div class="col-sm-2" style="padding-top:1%; padding-bottom: 1%;">
+                      <div class="card" style="height: 100%; transform: scale(); background-size: cover; background-image: url('https://sportshub.cbsistatic.com/i/r/2021/11/13/2ebca200-121f-4e2d-a44a-4f494a529696/thumbnail/1200x675/0b3a8bb53e95f3f7cd6d219d7cb3af8a/oklahoma-baylor.jpg');"></div>
+                    </div>
+                    <div class="col-sm-10" style="height: 100%;">
+                      <div class="row" style="height: 25%; margin-top: 10px;">
+                        <div class="col-sm-12">
+                          <p1>Title</p1>
+                        </div>
+                      </div>
+                      <div class="row" style="height: 65%; overflow: hidden;">
+                        <div class="col-sm-12">
+                          <p class="max-lines">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam harum
+                            commodi provident, numquam hic est mollitia odit at sed reiciendis, obcaecati facere
+                            voluptatem ipsa dolor iste cum laborum aut nam. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nunc vitae leo dapibus, accumsan lorem eleifend, pharetra quam. Quisque
+                            vestibulum commodo justo, eleifend mollis enim blandit eu. Aenean hendrerit nisl et elit
+                            maximus finibus. Suspendisse scelerisque consectetur nisl mollis scelerisque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!--END OF CARD-->
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5" style="padding:0% 1% 1% 1%;">
+              <div class="card bg-dark" style="border-radius: 20px; width: 100%; height: 100%; margin-top: 0px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="APIData.js"></script>
+</body>
+
+</html>
